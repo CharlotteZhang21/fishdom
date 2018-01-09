@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="6" height="6" tilewidth="100" tileheight="100" nextobjectid="1">
+ <tileset firstgid="1" name="pieces" tilewidth="100" tileheight="100" tilecount="7" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="100" height="100" source="../pieces/booster01.png"/>
+  </tile>
+  <tile id="1">
+   <image width="100" height="100" source="../pieces/booster02.png"/>
+  </tile>
+  <tile id="2">
+   <image width="100" height="100" source="../pieces/piece01.png"/>
+  </tile>
+  <tile id="3">
+   <image width="100" height="100" source="../pieces/piece02.png"/>
+  </tile>
+  <tile id="4">
+   <image width="100" height="100" source="../pieces/piece03.png"/>
+  </tile>
+  <tile id="5">
+   <image width="100" height="100" source="../pieces/piece04.png"/>
+  </tile>
+  <tile id="6">
+   <image width="100" height="100" source="../pieces/piece05.png"/>
+  </tile>
+ </tileset>
+ <layer name="pieces" width="6" height="6">
+  <data encoding="csv">
+4,7,4,5,6,3,
+6,3,5,3,4,7,
+4,5,4,6,6,3,
+5,4,7,5,5,4,
+3,3,6,5,7,4,
+5,7,5,3,6,3
+</data>
+ </layer>
+</map>
