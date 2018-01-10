@@ -384,7 +384,7 @@ class Instructions extends Phaser.Group {
     createText() {
 
         var txt = new Phaser.Text(this.game, 0, 0, '', {
-            font: '200px mainfont',
+            font: '100px mainfont',
             fill: Settings.tooltipTextFill,
             stroke: Settings.tooltipTextStroke,
             strokeThickness: Settings.tooltipTextStrokeThickness,

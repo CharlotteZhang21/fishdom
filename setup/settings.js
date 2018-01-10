@@ -21,9 +21,9 @@ exports.fadeBoardOnComplete = true; // when all interactions are complete the ga
 
 exports.removeGoalPanelOnComplete = true; // when all interactions are complete the goal panel will move out/stay
 
-exports.timer = true; // hide close button until interaction/autoplay
+exports.timer = false; // hide close button until interaction/autoplay
 
-exports.timerDuration = 3000; // time until close button will appear after first interaction
+exports.timerDuration = 0; // time until close button will appear after first interaction
 
 exports.interactionDelay = 0; // delay between tooltip hide and actual board interaction
 

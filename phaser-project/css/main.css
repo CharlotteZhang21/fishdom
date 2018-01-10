@@ -395,7 +395,8 @@ a {
   transition: opacity 0.2s ease-in-out 0.8s;
   backface-visibility: hidden;
   overflow: hidden;
-  z-index: 902; }
+  z-index: 902;
+  pointer-events: none; }
 
 #level-complete.show {
   top: 0%;
@@ -549,6 +550,9 @@ a {
     left: 27.5%;
     height: 30%;
     top: 25%; }
+  #tooltip-text {
+    height: 60%;
+    top: 45%; }
   #board {
     height: 53vw;
     width: 53vw;
@@ -602,9 +606,47 @@ a {
     left: 15%; }
   .cascade {
     width: 40%;
-    top: 100%; }
+    bottom: 100%; }
   #cascade-3 {
-    left: 30%; } }
+    left: 30%; }
+  #level-complete {
+    width: 100%; }
+  #level-complete .client-cta {
+    width: 40%;
+    left: 30%;
+    top: 60%;
+    z-index: 300; }
+  .logo {
+    position: absolute;
+    width: 50%;
+    top: 25%;
+    left: 25%;
+    z-index: 1; }
+  #level-completed-text {
+    left: 27.5%;
+    width: 45%; }
+  .fish img {
+    width: 50%; }
+  #level-complete.show .left-fish1 {
+    left: 0%;
+    bottom: 5%;
+    width: 48%; }
+  #level-complete.show .left-fish2 {
+    left: 8%;
+    bottom: 48%;
+    width: 50%; }
+  #level-complete.show .right-fish1 {
+    right: -10%;
+    bottom: 9%;
+    width: 35%; }
+  #level-complete.show .right-fish2 {
+    right: -20%;
+    width: 43%;
+    bottom: 40%; }
+  #level-complete.show .right-fish3 {
+    right: 10%;
+    width: 29%;
+    bottom: 65%; } }
 
 @media all and (min-width: 768px) and (orientation: portrait) {
   #ostin {
@@ -634,3 +676,14 @@ a {
     top: 90%; }
   #cta-end {
     left: 55%; } }
+
+@media (min-aspect-ratio: 724 / 354) and (orientation: landscape) {
+  #board {
+    width: 44vw;
+    height: 44vw; }
+  #board-mask {
+    width: 44vw;
+    height: 44vw;
+    top: 49.8%; }
+  #tooltip-text {
+    left: 48%; } }

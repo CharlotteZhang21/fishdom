@@ -39,8 +39,8 @@
   pointer-events: all; }
 
 #vungle-close.hide {
-  opacity: 1;
-  pointer-events: all; }
+  opacity: 0;
+  pointer-events: none; }
 
 #vungle-replay {
   width: 30px;
@@ -242,7 +242,6 @@ a {
   position: absolute;
   width: 100%;
   height: 100%;
-  max-height: 100%;
   overflow: hidden;
   left: 0;
   top: 0; }
@@ -352,7 +351,7 @@ a {
   width: 30%;
   height: 30%;
   padding-bottom: 8%;
-  top: 60%;
+  top: 65%;
   left: 90%; }
 
 #ostin {
@@ -396,7 +395,8 @@ a {
   transition: opacity 0.2s ease-in-out 0.8s;
   backface-visibility: hidden;
   overflow: hidden;
-  z-index: 902; }
+  z-index: 902;
+  pointer-events: none; }
 
 #level-complete.show {
   top: 0%;
@@ -508,7 +508,7 @@ a {
   width: 45%; }
 
 #level-complete.show .left-fish2 {
-  left: 4%;
+  left: 5%;
   bottom: 20%;
   width: 40%; }
 
@@ -550,6 +550,9 @@ a {
     left: 27.5%;
     height: 30%;
     top: 25%; }
+  #tooltip-text {
+    height: 60%;
+    top: 45%; }
   #board {
     height: 53vw;
     width: 53vw;
@@ -563,8 +566,7 @@ a {
     height: 50%;
     padding-bottom: 12.5%;
     top: 35%;
-    left: 50%;
-    z-index: 999; }
+    left: 50%; }
   #cta-start {
     width: 26%;
     left: 77.5%;
@@ -604,74 +606,47 @@ a {
     left: 15%; }
   .cascade {
     width: 40%;
-    top: 100%; }
+    bottom: 100%; }
   #cascade-3 {
-    left: 30%; } 
-
-    #level-complete {
-        width: 100%
-            
-    }
-    
-    #level-complete .client-cta {
-        width: 40%;
-        left: 30%;
-        top: 60%;
-        z-index: 300;
-    }
-    
-    .logo {
+    left: 30%; }
+  #level-complete {
+    width: 100%; }
+  #level-complete .client-cta {
+    width: 40%;
+    left: 30%;
+    top: 60%;
+    z-index: 300; }
+  .logo {
     position: absolute;
     width: 50%;
     top: 25%;
     left: 25%;
-    z-index: 1;
-    }
-    
-    #level-completed-text {
-        left: 27.5%;
-        width: 45%;
-    }
-    
-    .fish img {
-        width: 50%;
-    
-    }
-    
-    #level-complete.show .left-fish1 {
+    z-index: 1; }
+  #level-completed-text {
+    left: 27.5%;
+    width: 45%; }
+  .fish img {
+    width: 50%; }
+  #level-complete.show .left-fish1 {
     left: 0%;
     bottom: 5%;
-    width: 48%;
-    
-        
-    }
-
-    #level-complete.show .left-fish2 {
+    width: 48%; }
+  #level-complete.show .left-fish2 {
     left: 8%;
     bottom: 48%;
-    width: 50%;
-    
-    }   
-
-    #level-complete.show .right-fish1 {
+    width: 50%; }
+  #level-complete.show .right-fish1 {
     right: -10%;
     bottom: 9%;
-    width: 35%;
-    }
-
-    #level-complete.show .right-fish2 {
+    width: 35%; }
+  #level-complete.show .right-fish2 {
     right: -20%;
     width: 43%;
-    bottom: 40%;
-        
-    }
-
-    #level-complete.show .right-fish3 {
+    bottom: 40%; }
+  #level-complete.show .right-fish3 {
     right: 10%;
     width: 29%;
-    bottom: 65%
-    }
-}
+    bottom: 65%; } }
 
 @media all and (min-width: 768px) and (orientation: portrait) {
   #ostin {
@@ -684,12 +659,7 @@ a {
   #cta-start {
     width: 45%;
     height: 45%;
-    top: 90%; }
-
-  #move {
-    height: 40%;
-    top: 80%;
-    } }
+    top: 90%; } }
 
 @media all and (min-width: 768px) and (orientation: landscape) {
   #ostin {
@@ -705,21 +675,15 @@ a {
     height: 40%;
     top: 90%; }
   #cta-end {
-    left: 55%; }
-  #move {
-    top: 97%;
-    } }
+    left: 55%; } }
 
-
-/*iPhone X landscape*/
-@media (min-aspect-ratio: 724/354) and (orientation: landscape) {
-  #board, #board-mask {
-    width: 42vw;
-    height: 42vw;
-  }
-
-  #move {
-    top: 96%;
-  }
-
-}
+@media (min-aspect-ratio: 724 / 354) and (orientation: landscape) {
+  #board {
+    width: 44vw;
+    height: 44vw; }
+  #board-mask {
+    width: 44vw;
+    height: 44vw;
+    top: 49.8%; }
+  #tooltip-text {
+    left: 48%; } }

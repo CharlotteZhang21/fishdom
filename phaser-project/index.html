@@ -3,11 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0, user-scalable=no" />
     <title>Vungle Endcard</title>
     <!-- build:css main.css -->
     <link rel="stylesheet" href="css/main.css">
-    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0, user-scalable=no" />
     <!-- /build -->
     <style>
     @font-face {
@@ -20,7 +19,7 @@
 
     @font-face {
         font-family: 'mainfont';
-        src: url('font.ttf') format('truetype');
+        src: url('FilmotypeMajor_correct name.ttf') format('truetype');
         font-weight: normal;
         font-style: normal;
     }
@@ -35,27 +34,6 @@
         <div id="vungle-header" class="portrait-light landscape-light">
             <a id="vungle-close" class="hide" data-icon="i" onclick="doSomething('close')"></a>
         </div>
-
-        <div id="level-complete" >
-<!--             <img class="logo" src="logo.png" />
-            <a class="client-cta" href="javascript:void(0)" onclick="doSomething('download')"><img src="assets/cta.png"></a> -->
-            <div id="l1" class="left-fish1 fish">
-                <!-- <img src="assets/left-fish1.png"/> -->
-            </div>
-            <div id="l2" class="left-fish2 fish">
-                <!-- <img src="assets/left-fish2.png"/> -->
-            </div>
-            <div id="r1" class="right-fish1 fish">
-                <!-- <img src="assets/right-fish1.png"/> -->
-            </div>
-            <div id="r2" class="right-fish2 fish">
-                <!-- <img src="assets/right-fish2.png"/> -->
-            </div>
-            <div id="r3" class="right-fish3 fish">
-                <!-- <img src="assets/right-fish3.png"/> -->
-            </div>
-        </div>
-
         <div id="game"></div>
         <!-- layout -->
         <div id="logo" class="layout"></div>
@@ -77,8 +55,27 @@
             <div id="goal-text-3" class="layout"></div>
             <div id="move" class="layout"></div>
         </div>
+        <div id="level-complete" >
+<!--             <img class="logo" src="logo.png" />
+            <a class="client-cta" href="javascript:void(0)" onclick="doSomething('download')"><img src="cta.png"></a> -->
+            <div id="l1" class="left-fish1 fish">
+                <img src="../assets/left-fish1.png"/>
+            </div>
+            <div id="l2" class="left-fish2 fish">
+                <img src="../assets/left-fish2.png"/>
+            </div>
+            <div id="r1" class="right-fish1 fish">
+                <img src="../assets/right-fish1.png"/>
+            </div>
+            <div id="r2" class="right-fish2 fish">
+                <img src="../assets/right-fish2.png"/>
+            </div>
+            <div id="r3" class="right-fish3 fish">
+                <img src="../assets/right-fish3.png"/>
+            </div>
+        </div>
         <!-- custom animations start -->
-        <!-- <div id="ostin" class="layout"></div> -->
+        <div id="ostin" class="layout"></div>
         <div id="cascade-1" class="layout cascade"></div>
         <div id="cascade-2" class="layout cascade"></div>
         <div id="cascade-3" class="layout cascade"></div>

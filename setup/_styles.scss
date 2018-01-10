@@ -185,6 +185,7 @@
     #cascade-4 {
         left: 85%;
     }
+
     /*************************** LANDSCAPE ***************************/
 
     @media all and (orientation:landscape) {
@@ -250,6 +251,69 @@
         #cascade-3 {
             left: 30%;
         }
+
+         #level-complete {
+            width: 100%; 
+        }
+        
+        #level-complete .client-cta {
+            width: 40%;
+            left: 30%;
+            top: 60%;
+            z-index: 300;
+        }
+        
+        .logo {
+        position: absolute;
+        width: 50%;
+        top: 25%;
+        left: 25%;
+        z-index: 1;
+        }
+        
+        #level-completed-text {
+            left: 27.5%;
+            width: 45%;
+        }
+        
+        .fish img {
+            width: 50%;
+        
+        }
+        
+        #level-complete.show .left-fish1 {
+        left: 0%;
+        bottom: 5%;
+        width: 48%;
+        
+            
+        }
+
+        #level-complete.show .left-fish2 {
+        left: 8%;
+        bottom: 48%;
+        width: 50%;
+        
+        }   
+
+        #level-complete.show .right-fish1 {
+        right: -10%;
+        bottom: 9%;
+        width: 35%;
+        }
+
+        #level-complete.show .right-fish2 {
+        right: -20%;
+        width: 43%;
+        bottom: 40%;
+            
+        }
+
+        #level-complete.show .right-fish3 {
+        right: 10%;
+        width: 29%;
+        bottom: 65%;
+        }
     }
 
        //ipad
@@ -297,3 +361,4 @@
         }
 
     }
+
